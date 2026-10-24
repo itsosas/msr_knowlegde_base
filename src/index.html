@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A knowledge base for Mining Software Repositories researchers.">
+    <title>MSR Knowledge Base</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <h1>MSR Knowledge Base</h1>
+        <p>A resource hub for Mining Software Repositories researchers</p>
+    </header>
+
+    <nav class="main-navigation" aria-label="Main navigation">
+        <button class="tab-button active" data-tab="home" aria-selected="true">Home</button>
+        <button class="tab-button" data-tab="data-sources" aria-selected="false">Data Sources</button>
+        <button class="tab-button" data-tab="collection-methods" aria-selected="false">Collection Methods</button>
+        <button class="tab-button" data-tab="analysis-methods" aria-selected="false">Analysis Methods</button>
+        <button class="tab-button" data-tab="publication-venues" aria-selected="false">Publication Venues</button>
+    </nav>
+
+    <main class="content">
+        <section id="home" class="tab-content active">
+            <h2>Welcome to the MSR Knowledge Base</h2>
+            <p>
+                Mining Software Repositories (MSR) is the study of software development
+                data to understand how software is created, maintained, and improved.
+            </p>
+            <p>
+                Use the navigation tabs to explore data sources, collection methods,
+                analysis techniques, and publication venues relevant to MSR research.
+            </p>
+        </section>
+
+        <section id="data-sources" class="tab-content" hidden>
+            <h2>Data Sources</h2>
+            <p>Explore platforms that provide useful data for software repository research.</p>
+            <div id="data-sources-list" class="resource-list"></div>
+        </section>
+
+        <section id="collection-methods" class="tab-content" hidden>
+            <h2>Collection Methods</h2>
+            <p>Learn how researchers collect software development data.</p>
+            <div id="collection-methods-list" class="resource-list"></div>
+        </section>
+
+        <section id="analysis-methods" class="tab-content" hidden>
+            <h2>Analysis Methods</h2>
+            <p>Explore techniques for examining and understanding collected data.</p>
+            <div id="analysis-methods-list" class="resource-list"></div>
+        </section>
+
+        <section id="publication-venues" class="tab-content" hidden>
+            <h2>Publication Venues</h2>
+            <p>Discover conferences and journals that publish MSR research.</p>
+            <div id="publication-venues-list" class="resource-list"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>MSR Knowledge Base | Student Project</p>
+    </footer>
+</body>
+</html>

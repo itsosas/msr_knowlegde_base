@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263445;
+    line-height: 1.6;
+}
+
+/* Website heading */
+.site-header {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.site-header p {
+    margin: 8px 0 0;
+    color: #dce8f5;
+}
+
+/* Navigation buttons */
+.main-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 15px;
+    background-color: white;
+    border-bottom: 1px solid #d8e0e9;
+}
+
+.tab-button {
+    border: none;
+    border-radius: 6px;
+    padding: 12px 18px;
+    background-color: #e8eef6;
+    color: #17365d;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.tab-button:hover {
+    background-color: #d2deed;
+}
+
+.tab-button.active {
+    background-color: #2463a6;
+    color: white;
+}
+
+.tab-button:focus-visible {
+    outline: 3px solid #f0b429;
+    outline-offset: 3px;
+}
+
+/* Main content area */
+.content {
+    max-width: 1000px;
+    min-height: 400px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.tab-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.tab-content h2 {
+    margin-top: 0;
+    color: #17365d;
+}
+
+.tab-content[hidden] {
+    display: none;
+}
+
+/* Resource cards for later milestones */
+.resource-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.resource-card {
+    padding: 18px;
+    border: 1px solid #d8e0e9;
+    border-radius: 8px;
+    background-color: #fbfcfe;
+}
+
+.resource-card h3 {
+    margin-top: 0;
+    color: #2463a6;
+}
+
+/* Website footer */
+.site-footer {
+    margin-top: 40px;
+    padding: 18px;
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    .site-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .tab-button {
+        width: 100%;
+    }
+
+    .tab-content {
+        padding: 20px;
+    }
+}
